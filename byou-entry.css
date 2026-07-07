@@ -65,3 +65,13 @@
   .entry-center small{letter-spacing:.26em;font-size:9px}
   .entry-center button{min-width:154px;height:42px}
 }
+
+
+/* ChatGPT patch: move welcome card lower */
+.entry-center{
+  margin-top:80px !important;
+  transform:translateY(70px) !important;
+}
+.entry-center button{
+  letter-spacing:2px;
+}
