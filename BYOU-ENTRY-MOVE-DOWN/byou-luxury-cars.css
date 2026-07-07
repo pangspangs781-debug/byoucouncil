@@ -1,0 +1,101 @@
+.luxury-car-bg{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  overflow:hidden;
+  pointer-events:none;
+  opacity:.62;
+  mix-blend-mode:screen;
+}
+.luxury-car-bg:before{
+  content:"";
+  position:absolute;
+  left:-8%;
+  right:-8%;
+  bottom:5%;
+  height:28%;
+  background:
+    radial-gradient(ellipse at 50% 100%,rgba(229,196,90,.12),transparent 56%),
+    linear-gradient(170deg,transparent 0 26%,rgba(229,196,90,.045) 27% 28%,transparent 29% 100%),
+    linear-gradient(188deg,transparent 0 44%,rgba(80,119,158,.045) 45% 46%,transparent 47% 100%);
+  filter:blur(.2px);
+  opacity:.75;
+}
+.luxury-car-bg:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:34%;
+  background:
+    linear-gradient(180deg,transparent,rgba(0,0,0,.18)),
+    repeating-linear-gradient(104deg,transparent 0 150px,rgba(255,224,122,.035) 151px 153px,transparent 154px 300px);
+  opacity:.55;
+}
+.light-lane{
+  position:absolute;
+  left:-38vw;
+  width:38vw;
+  height:26px;
+  transform:translate3d(0,0,0) skewX(-14deg);
+  will-change:transform;
+}
+.light-lane i,
+.light-lane b{
+  position:absolute;
+  display:block;
+  border-radius:999px;
+  filter:blur(.15px);
+}
+.light-lane i{
+  right:0;
+  top:8px;
+  width:100%;
+  height:4px;
+  background:linear-gradient(90deg,transparent,rgba(255,236,157,.08),rgba(255,236,157,.86),rgba(255,236,157,.18),transparent);
+  box-shadow:0 0 18px rgba(229,196,90,.26),0 0 44px rgba(229,196,90,.11);
+}
+.light-lane b{
+  right:20%;
+  top:15px;
+  width:66%;
+  height:3px;
+  background:linear-gradient(90deg,transparent,rgba(205,43,37,.42),rgba(255,189,87,.2),transparent);
+  box-shadow:0 0 16px rgba(205,43,37,.14);
+}
+.lane-1{
+  bottom:14%;
+  animation:luxLightRun 16s linear infinite;
+}
+.lane-2{
+  bottom:22%;
+  animation:luxLightRun 24s linear infinite reverse;
+  animation-delay:-8s;
+  opacity:.58;
+  transform:translate3d(0,0,0) skewX(-10deg) scale(.78);
+}
+.lane-2 i{
+  background:linear-gradient(90deg,transparent,rgba(111,164,214,.08),rgba(229,196,90,.55),rgba(111,164,214,.16),transparent);
+}
+.lane-3{
+  bottom:8%;
+  animation:luxLightRun 32s linear infinite;
+  animation-delay:-17s;
+  opacity:.38;
+  transform:translate3d(0,0,0) skewX(-18deg) scale(1.15);
+}
+.lane-3 i{
+  height:3px;
+}
+@keyframes luxLightRun{
+  from{transform:translate3d(-10vw,0,0) skewX(-14deg)}
+  to{transform:translate3d(154vw,0,0) skewX(-14deg)}
+}
+@media(max-width:760px){
+  .luxury-car-bg{opacity:.36}
+  .lane-2,.lane-3{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .light-lane{animation:none;transform:translate3d(64vw,0,0) skewX(-14deg);opacity:.25}
+}

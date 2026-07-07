@@ -1,0 +1,236 @@
+.anime-hero{
+  position:relative;
+  min-height:min(760px,74vh);
+  overflow:hidden;
+  border:1px solid rgba(229,196,90,.22);
+  border-radius:28px;
+  background:
+    radial-gradient(circle at 50% 50%,rgba(229,196,90,.08),transparent 45%),
+    #030303;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.06),
+    0 28px 90px rgba(0,0,0,.42),
+    0 0 52px rgba(229,196,90,.08);
+}
+.anime-hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 15% 18%,rgba(255,226,126,.13),transparent 17%),
+    radial-gradient(circle at 38% 18%,rgba(255,226,126,.1),transparent 16%),
+    radial-gradient(circle at 63% 18%,rgba(255,226,126,.12),transparent 16%),
+    radial-gradient(circle at 86% 20%,rgba(255,226,126,.13),transparent 18%),
+    radial-gradient(circle at 16% 58%,rgba(255,226,126,.12),transparent 18%),
+    radial-gradient(circle at 82% 58%,rgba(255,226,126,.12),transparent 18%),
+    radial-gradient(circle at 22% 84%,rgba(255,226,126,.11),transparent 17%),
+    radial-gradient(circle at 50% 86%,rgba(255,226,126,.1),transparent 16%),
+    radial-gradient(circle at 78% 84%,rgba(255,226,126,.11),transparent 17%),
+    radial-gradient(ellipse at 50% 50%,rgba(0,0,0,.02),rgba(0,0,0,.26) 80%),
+    linear-gradient(90deg,rgba(0,0,0,.2),rgba(0,0,0,.08) 42%,rgba(0,0,0,.18)),
+    linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.18) 70%,rgba(0,0,0,.62));
+}
+.anime-hero:after{
+  content:"";
+  position:absolute;
+  inset:14px;
+  z-index:3;
+  pointer-events:none;
+  border:1px solid rgba(255,226,126,.22);
+  border-radius:22px;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.025),
+    inset 0 0 38px rgba(229,196,90,.055);
+}
+.anime-hero-art{
+  position:absolute;
+  inset:18px;
+  width:calc(100% - 36px);
+  height:calc(100% - 36px);
+  object-fit:cover;
+  object-position:center;
+  opacity:.96;
+  filter:saturate(1.04) contrast(1.08) brightness(.96);
+  transform:scale(1);
+  border-radius:20px;
+}
+.anime-hero .anime-hero-art + .anime-hero-overlay:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:url("byou-council-hero-art.png");
+  background-size:cover;
+  background-position:center;
+  filter:blur(12px) brightness(.52) saturate(.95);
+  transform:scale(1.08);
+  opacity:1;
+  z-index:-1;
+}
+.anime-hero-overlay{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:
+    radial-gradient(circle at 50% 48%,rgba(229,196,90,.08),transparent 24%),
+    linear-gradient(115deg,transparent 0 44%,rgba(255,226,126,.055) 45%,transparent 47% 100%);
+  mix-blend-mode:screen;
+}
+.anime-hero-content{
+  position:relative;
+  z-index:4;
+  min-height:min(760px,74vh);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  padding:42px 48px 34px;
+  text-align:center;
+}
+.clean-hero .anime-hero-content,.clean-hero .hero-logo,.clean-hero .hero-copy,.clean-hero .anime-hero-badges,.clean-hero .anime-hero-title{display:none!important}
+.clean-hero{
+  min-height:0;
+  height:auto;
+  aspect-ratio:3/2;
+}
+.clean-hero:before{
+  background:
+    radial-gradient(ellipse at 50% 50%,rgba(0,0,0,.02),rgba(0,0,0,.22) 76%),
+    linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.14) 70%,rgba(0,0,0,.45));
+}
+.clean-hero .anime-hero-art{
+  inset:0;
+  width:100%;
+  height:100%;
+  filter:saturate(1.03) contrast(1.07) brightness(1);
+  border-radius:0;
+}
+.clean-hero .anime-hero-overlay{
+  z-index:1;
+}
+.clean-hero .anime-hero-overlay:before{
+  display:none;
+}
+.clean-hero .anime-hero-overlay:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(ellipse at center,transparent 0 52%,rgba(0,0,0,.3) 100%),
+    linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.25));
+}
+.home-title-strip{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  margin:-10px 0 16px;
+  padding:18px 20px;
+  border:1px solid rgba(229,196,90,.15);
+  border-radius:20px;
+  background:radial-gradient(circle at 0 0,rgba(229,196,90,.08),transparent 40%),linear-gradient(145deg,rgba(255,255,255,.032),rgba(6,7,9,.62));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 20px 56px rgba(0,0,0,.24);
+}
+.home-title-strip .eyebrow{
+  color:#d9bb58;
+  font:900 10px Montserrat,sans-serif;
+  letter-spacing:.28em;
+}
+.home-title-strip h1{
+  margin:7px 0 5px;
+  color:#fff1c8;
+  font-size:34px;
+  line-height:1;
+  text-shadow:0 0 22px rgba(229,196,90,.16);
+}
+.home-title-strip p{
+  margin:0;
+  color:#9d968a;
+  font-size:13px;
+}
+.home-title-strip .anime-hero-badges{
+  margin:0;
+  justify-content:flex-end;
+}
+.anime-hero-title{
+  align-self:stretch;
+  text-align:left;
+  max-width:650px;
+  padding:18px 20px;
+  border:1px solid rgba(229,196,90,.16);
+  border-radius:20px;
+  background:linear-gradient(135deg,rgba(0,0,0,.52),rgba(0,0,0,.18));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 18px 44px rgba(0,0,0,.22);
+  backdrop-filter:blur(8px);
+}
+.anime-hero-title .eyebrow{
+  color:#d9bb58;
+  font:900 10px Montserrat,sans-serif;
+  letter-spacing:.28em;
+}
+.anime-hero-title h1{
+  margin:8px 0 6px;
+  color:#fff1c8;
+  font-size:38px;
+  line-height:1;
+  text-shadow:0 0 24px rgba(229,196,90,.18);
+}
+.anime-hero-title p{
+  margin:0;
+  color:#a8a092;
+  font-size:13px;
+}
+.anime-hero .hero-logo{
+  width:min(190px,30vw);
+  max-height:68px;
+  object-fit:contain;
+  object-position:center;
+  filter:drop-shadow(0 0 28px rgba(229,196,90,.28)) drop-shadow(0 18px 26px rgba(0,0,0,.45));
+  margin-top:auto;
+}
+.anime-hero .hero-copy{
+  margin-top:16px;
+  padding:8px 12px;
+  border:1px solid rgba(229,196,90,.18);
+  border-radius:999px;
+  background:rgba(0,0,0,.46);
+  color:#e6d291;
+  font:800 8px Montserrat,sans-serif;
+  letter-spacing:.24em;
+  box-shadow:0 0 24px rgba(229,196,90,.08);
+}
+.anime-hero-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:18px;
+  margin-bottom:4px;
+  justify-content:center;
+}
+.anime-hero-badges span{
+  padding:7px 10px;
+  border:1px solid rgba(255,226,126,.18);
+  border-radius:11px;
+  background:linear-gradient(135deg,rgba(229,196,90,.14),rgba(0,0,0,.45));
+  color:#fff0a6;
+  font:900 8px Montserrat,sans-serif;
+  letter-spacing:.12em;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+}
+@media(max-width:760px){
+  .anime-hero{min-height:520px;border-radius:22px}
+  .anime-hero-art{inset:10px;width:calc(100% - 20px);height:calc(100% - 20px)}
+  .anime-hero-content{min-height:520px;padding:24px 20px}
+  .anime-hero-title{padding:14px 15px}
+  .anime-hero-title .eyebrow{font-size:8px;letter-spacing:.16em}
+  .anime-hero-title h1{font-size:28px}
+  .anime-hero-title p{font-size:11px}
+  .anime-hero .hero-logo{width:min(180px,54vw)}
+  .anime-hero .hero-copy{font-size:8px;letter-spacing:.18em}
+  .anime-hero-badges span{font-size:8px;padding:7px 9px}
+  .clean-hero{min-height:0;height:auto;aspect-ratio:3/2}
+  .home-title-strip{display:block;margin:10px 0 14px;padding:15px}
+  .home-title-strip h1{font-size:27px}
+  .home-title-strip .anime-hero-badges{margin-top:12px;justify-content:flex-start}
+}
