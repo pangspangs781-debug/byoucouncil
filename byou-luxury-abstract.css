@@ -1,1 +1,157 @@
-.brand{overflow:visible}.brand img{width:58px;height:58px;transform:scale(1.72);transform-origin:center;filter:drop-shadow(0 0 11px rgba(229,196,90,.38))}.brand>div{position:relative;z-index:2;margin-left:8px}.hero-logo{width:min(650px,72%);height:210px;transform:scale(1.58);transform-origin:28% 50%;margin-left:15px;filter:drop-shadow(0 0 30px rgba(229,196,90,.24))}.splash img{transform:scale(1.55);filter:drop-shadow(0 0 35px rgba(229,196,90,.28))}.floating-council-logo img{width:88%;height:88%;transform:scale(1.42)}@media(max-width:1180px){.brand img{width:52px;height:52px;transform:scale(1.6)}.brand>div{margin-left:3px}.hero-logo{transform:scale(1.42);width:68%}}@media(max-width:760px){.hero-logo{width:100%;height:165px;transform:scale(1.45);transform-origin:center}.floating-council-logo img{transform:scale(1.35)}}
+.byou-luxury-abstract{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  overflow:hidden;
+  pointer-events:none;
+  opacity:.96;
+  background:
+    radial-gradient(circle at 50% 12%,rgba(255,231,151,.06),transparent 28%),
+    radial-gradient(circle at 0 100%,rgba(229,196,90,.08),transparent 30%),
+    linear-gradient(135deg,#030405,#090807 44%,#030304);
+}
+.byou-luxury-abstract:before{
+  content:"";
+  position:absolute;
+  inset:-12%;
+  background:
+    radial-gradient(ellipse at 18% 16%,rgba(255,223,112,.18),transparent 26%),
+    radial-gradient(ellipse at 86% 20%,rgba(72,92,118,.16),transparent 25%),
+    radial-gradient(ellipse at 68% 92%,rgba(229,196,90,.14),transparent 32%),
+    conic-gradient(from 210deg at 72% 30%,transparent 0 22%,rgba(229,196,90,.055) 26%,transparent 34% 100%),
+    linear-gradient(135deg,rgba(255,255,255,.035),transparent 33%,rgba(229,196,90,.055) 72%,transparent);
+  filter:blur(.2px);
+  animation:luxBgBreath 20s ease-in-out infinite alternate;
+}
+.byou-luxury-abstract:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px),
+    linear-gradient(180deg,rgba(255,255,255,.012) 1px,transparent 1px),
+    repeating-linear-gradient(115deg,transparent 0 92px,rgba(229,196,90,.045) 93px 94px,transparent 95px 190px),
+    repeating-linear-gradient(25deg,transparent 0 150px,rgba(255,255,255,.02) 151px 152px,transparent 153px 270px);
+  background-size:78px 78px,78px 78px,auto,auto;
+  mask-image:radial-gradient(ellipse at center,black 0 60%,transparent 84%);
+  opacity:.62;
+}
+.byou-luxury-abstract i{
+  position:absolute;
+  display:block;
+  border:1px solid rgba(255,226,126,.16);
+  border-radius:36px;
+  background:
+    linear-gradient(135deg,rgba(255,235,150,.075),rgba(255,255,255,.014) 52%,rgba(0,0,0,.08)),
+    linear-gradient(45deg,transparent 46%,rgba(255,226,126,.1) 48%,transparent 52%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 0 58px rgba(229,196,90,.06);
+  transform:rotate(35deg);
+  backdrop-filter:blur(1px);
+}
+.byou-luxury-abstract i:nth-child(1){
+  width:430px;
+  height:430px;
+  right:-150px;
+  top:4%;
+  animation:luxShapeOne 22s ease-in-out infinite alternate;
+}
+.byou-luxury-abstract i:nth-child(2){
+  width:560px;
+  height:220px;
+  left:-180px;
+  bottom:7%;
+  border-radius:999px;
+  animation:luxShapeTwo 26s ease-in-out infinite alternate;
+}
+.byou-luxury-abstract i:nth-child(3){
+  width:330px;
+  height:330px;
+  left:39%;
+  top:-155px;
+  border-radius:58px;
+  opacity:.62;
+  animation:luxShapeThree 28s ease-in-out infinite alternate-reverse;
+}
+.byou-luxury-abstract span{
+  position:absolute;
+  display:block;
+  height:3px;
+  border-radius:999px;
+  background:linear-gradient(90deg,transparent,rgba(255,241,177,.92),rgba(229,196,90,.2),transparent);
+  box-shadow:0 0 20px rgba(229,196,90,.28),0 0 58px rgba(229,196,90,.12);
+  opacity:.62;
+}
+.byou-luxury-abstract span:nth-of-type(1){
+  width:48%;
+  left:-10%;
+  top:22%;
+  transform:rotate(-17deg);
+  animation:luxLine 16s ease-in-out infinite alternate;
+}
+.byou-luxury-abstract span:nth-of-type(2){
+  width:44%;
+  right:-9%;
+  bottom:20%;
+  transform:rotate(-17deg);
+  animation:luxLine 19s ease-in-out infinite alternate-reverse;
+}
+.byou-luxury-abstract b{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:230px;
+  background:
+    radial-gradient(ellipse at 50% 100%,rgba(255,222,116,.22),transparent 56%),
+    linear-gradient(180deg,transparent,rgba(0,0,0,.46));
+  filter:blur(.3px);
+  opacity:.92;
+}
+.byou-luxury-abstract b:before{
+  content:"";
+  position:absolute;
+  left:8%;
+  right:8%;
+  bottom:42px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,235,150,.45),transparent);
+  box-shadow:0 0 28px rgba(229,196,90,.22);
+}
+.byou-luxury-abstract b:after{
+  content:"";
+  position:absolute;
+  inset:auto 9% 18px 9%;
+  height:76px;
+  background:repeating-linear-gradient(170deg,transparent 0 26px,rgba(229,196,90,.075) 27px 28px,transparent 29px 52px);
+  opacity:.72;
+}
+@keyframes luxBgBreath{
+  from{transform:scale(1) translate3d(0,0,0);opacity:.78}
+  to{transform:scale(1.045) translate3d(-14px,10px,0);opacity:1}
+}
+@keyframes luxShapeOne{
+  from{transform:rotate(35deg) translate3d(0,0,0)}
+  to{transform:rotate(39deg) translate3d(-24px,18px,0)}
+}
+@keyframes luxShapeTwo{
+  from{transform:rotate(35deg) translate3d(0,0,0)}
+  to{transform:rotate(31deg) translate3d(28px,-12px,0)}
+}
+@keyframes luxShapeThree{
+  from{transform:rotate(35deg) translate3d(0,0,0)}
+  to{transform:rotate(42deg) translate3d(18px,24px,0)}
+}
+@keyframes luxLine{
+  from{opacity:.28;filter:blur(.4px)}
+  to{opacity:.76;filter:blur(0)}
+}
+@media(max-width:760px){
+  .byou-luxury-abstract{opacity:.72}
+  .byou-luxury-abstract i:nth-child(1){width:230px;height:230px}
+  .byou-luxury-abstract i:nth-child(2){width:300px;height:130px}
+}
+@media(prefers-reduced-motion:reduce){
+  .byou-luxury-abstract:before,
+  .byou-luxury-abstract i,
+  .byou-luxury-abstract span{animation:none}
+}

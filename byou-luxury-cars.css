@@ -1,1 +1,101 @@
-:root{--champagne:#fff1b0;--antique:#a87b28;--obsidian:#080806}.sidebar{box-shadow:0 14px 55px rgba(0,0,0,.62),inset 0 -1px rgba(255,227,130,.035)}.brand{position:relative}.brand:after{content:"✦";position:absolute;right:8px;color:rgba(229,196,90,.35);font-size:10px}.nav button{border:1px solid transparent}.nav button.active{border-color:rgba(229,196,90,.16);box-shadow:inset 0 1px rgba(255,241,181,.06),0 8px 28px rgba(0,0,0,.22)}.pagehead{position:relative;padding:12px 0 16px}.pagehead:before{content:"";position:absolute;left:0;bottom:0;width:92px;height:1px;background:linear-gradient(90deg,var(--gold2),transparent);box-shadow:0 0 9px rgba(229,196,90,.45)}.pagehead:after{content:"◆";position:absolute;left:98px;bottom:-5px;color:rgba(229,196,90,.34);font-size:8px}.pagehead h1{font-weight:600;letter-spacing:.35px;background:linear-gradient(180deg,#fff,#d7cfb9);-webkit-background-clip:text;background-clip:text;color:transparent}.eyebrow{background:linear-gradient(90deg,#9d7525,#fff0a1,#a17828);-webkit-background-clip:text;background-clip:text;color:transparent}.hero{border-color:rgba(229,196,90,.24);background:linear-gradient(105deg,rgba(8,8,7,.97),rgba(28,23,12,.84)),radial-gradient(circle at 80%,rgba(229,196,90,.2),transparent 35%);box-shadow:0 35px 90px rgba(0,0,0,.55),inset 0 1px rgba(255,242,185,.07)}.hero:before{content:"";position:absolute;inset:11px;border:1px solid rgba(229,196,90,.07);border-radius:15px;pointer-events:none}.hero-copy:before{content:"◆";color:var(--gold);margin-right:10px}.card,.panel,.stat,.tablewrap{border-color:rgba(229,196,90,.19);box-shadow:0 22px 65px rgba(0,0,0,.28),inset 0 1px rgba(255,243,190,.045)}.card,.panel,.stat{overflow:hidden}.card:before,.panel:before,.stat:before{content:"";position:absolute;top:0;left:-75%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,238,174,.045),transparent);transform:skewX(-20deg);transition:left .75s ease;pointer-events:none;z-index:1}.card:hover:before,.panel:hover:before,.stat:hover:before{left:135%}.stat{position:relative}.stat span{text-transform:uppercase;letter-spacing:.6px}.stat b{background:linear-gradient(180deg,#fff4b6,#b7892c);-webkit-background-clip:text;background-clip:text;color:transparent}.sectiontitle h2{font-weight:500;letter-spacing:.25px}.sectiontitle:before{content:"◆";font-size:8px;color:var(--gold);filter:drop-shadow(0 0 5px var(--gold))}.sectiontitle:after{background:linear-gradient(90deg,rgba(229,196,90,.35),rgba(229,196,90,.03),transparent)}.btn{position:relative;overflow:hidden;box-shadow:inset 0 1px rgba(255,255,255,.04)}.btn.gold{background:linear-gradient(135deg,#fff1a0 0%,#d6ad47 35%,#8d651e 100%);box-shadow:inset 0 1px rgba(255,255,255,.55),0 10px 30px rgba(174,125,28,.18);text-shadow:0 1px rgba(255,255,255,.25)}.btn.gold:hover{box-shadow:inset 0 1px rgba(255,255,255,.65),0 12px 38px rgba(207,160,47,.3)}th{background:linear-gradient(180deg,rgba(229,196,90,.055),transparent);color:#a69c82}tbody tr{transition:.22s}tbody tr:hover{background:rgba(229,196,90,.035)}.modal{border-color:rgba(229,196,90,.38);box-shadow:0 40px 120px #000,0 0 0 1px rgba(255,241,177,.035),0 0 75px rgba(183,132,28,.1)}.modal:before{content:"";display:block;position:absolute;inset:8px;border:1px solid rgba(229,196,90,.055);border-radius:14px;pointer-events:none}.modalhead{position:relative;padding-bottom:14px;border-bottom:1px solid rgba(229,196,90,.12)}.profile .info{background:linear-gradient(180deg,rgba(11,11,9,.85),rgba(20,17,10,.96))}.orglogo,.avatar{box-shadow:0 0 0 1px rgba(229,196,90,.2),0 8px 22px rgba(0,0,0,.35)}input,select{box-shadow:inset 0 2px 9px rgba(0,0,0,.3)}.security-lock{box-shadow:inset 0 1px rgba(255,255,255,.035)}@media(max-width:760px){.pagehead{padding-top:7px}.hero{border-radius:18px}.brand:after{display:none}}
+.luxury-car-bg{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  overflow:hidden;
+  pointer-events:none;
+  opacity:.62;
+  mix-blend-mode:screen;
+}
+.luxury-car-bg:before{
+  content:"";
+  position:absolute;
+  left:-8%;
+  right:-8%;
+  bottom:5%;
+  height:28%;
+  background:
+    radial-gradient(ellipse at 50% 100%,rgba(229,196,90,.12),transparent 56%),
+    linear-gradient(170deg,transparent 0 26%,rgba(229,196,90,.045) 27% 28%,transparent 29% 100%),
+    linear-gradient(188deg,transparent 0 44%,rgba(80,119,158,.045) 45% 46%,transparent 47% 100%);
+  filter:blur(.2px);
+  opacity:.75;
+}
+.luxury-car-bg:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:34%;
+  background:
+    linear-gradient(180deg,transparent,rgba(0,0,0,.18)),
+    repeating-linear-gradient(104deg,transparent 0 150px,rgba(255,224,122,.035) 151px 153px,transparent 154px 300px);
+  opacity:.55;
+}
+.light-lane{
+  position:absolute;
+  left:-38vw;
+  width:38vw;
+  height:26px;
+  transform:translate3d(0,0,0) skewX(-14deg);
+  will-change:transform;
+}
+.light-lane i,
+.light-lane b{
+  position:absolute;
+  display:block;
+  border-radius:999px;
+  filter:blur(.15px);
+}
+.light-lane i{
+  right:0;
+  top:8px;
+  width:100%;
+  height:4px;
+  background:linear-gradient(90deg,transparent,rgba(255,236,157,.08),rgba(255,236,157,.86),rgba(255,236,157,.18),transparent);
+  box-shadow:0 0 18px rgba(229,196,90,.26),0 0 44px rgba(229,196,90,.11);
+}
+.light-lane b{
+  right:20%;
+  top:15px;
+  width:66%;
+  height:3px;
+  background:linear-gradient(90deg,transparent,rgba(205,43,37,.42),rgba(255,189,87,.2),transparent);
+  box-shadow:0 0 16px rgba(205,43,37,.14);
+}
+.lane-1{
+  bottom:14%;
+  animation:luxLightRun 16s linear infinite;
+}
+.lane-2{
+  bottom:22%;
+  animation:luxLightRun 24s linear infinite reverse;
+  animation-delay:-8s;
+  opacity:.58;
+  transform:translate3d(0,0,0) skewX(-10deg) scale(.78);
+}
+.lane-2 i{
+  background:linear-gradient(90deg,transparent,rgba(111,164,214,.08),rgba(229,196,90,.55),rgba(111,164,214,.16),transparent);
+}
+.lane-3{
+  bottom:8%;
+  animation:luxLightRun 32s linear infinite;
+  animation-delay:-17s;
+  opacity:.38;
+  transform:translate3d(0,0,0) skewX(-18deg) scale(1.15);
+}
+.lane-3 i{
+  height:3px;
+}
+@keyframes luxLightRun{
+  from{transform:translate3d(-10vw,0,0) skewX(-14deg)}
+  to{transform:translate3d(154vw,0,0) skewX(-14deg)}
+}
+@media(max-width:760px){
+  .luxury-car-bg{opacity:.36}
+  .lane-2,.lane-3{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .light-lane{animation:none;transform:translate3d(64vw,0,0) skewX(-14deg);opacity:.25}
+}

@@ -1,59 +1,51 @@
-body:before{
-  content:"";
-  position:fixed;
-  inset:0;
-  z-index:0;
-  pointer-events:none;
-  background:
-    radial-gradient(ellipse at 50% 0,rgba(255,238,166,.045),transparent 42%),
-    radial-gradient(ellipse at 50% 100%,rgba(229,196,90,.055),transparent 46%),
-    linear-gradient(90deg,rgba(0,0,0,.42),transparent 22%,transparent 78%,rgba(0,0,0,.42));
-}
-body:after{
-  content:"";
-  position:fixed;
-  inset:0;
-  z-index:0;
-  pointer-events:none;
-  background-image:radial-gradient(rgba(255,255,255,.075) .55px,transparent .55px);
-  background-size:3px 3px;
-  opacity:.055;
-  mix-blend-mode:screen;
-}
-.app,.topbar,.sidebar,#pages,.modalbox{
-  position:relative;
-}
-.pagehead,.card,.tablewrap,.wheel-layout>*,.modalbox,.detailhero{
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.045),
-    0 24px 70px rgba(0,0,0,.28);
-}
-.pagehead{
-  border-color:rgba(229,196,90,.13)!important;
-  background:
-    radial-gradient(circle at 0 0,rgba(229,196,90,.08),transparent 45%),
-    linear-gradient(145deg,rgba(255,255,255,.032),rgba(8,9,10,.38))!important;
-  backdrop-filter:blur(14px);
-}
-.pagehead h1{
-  color:#fff0c8;
-  text-shadow:0 0 22px rgba(229,196,90,.14);
-}
-.card{
-  border-color:rgba(229,196,90,.15)!important;
-  background:
-    radial-gradient(circle at 10% 0,rgba(229,196,90,.055),transparent 38%),
-    linear-gradient(145deg,rgba(255,255,255,.032),rgba(6,7,9,.72))!important;
-}
-.btn.gold{
-  background:linear-gradient(135deg,#f1d46f,#9f7420)!important;
-  color:#120e06!important;
-  box-shadow:0 0 24px rgba(229,196,90,.18),inset 0 1px 0 rgba(255,255,255,.35)!important;
-}
-.btn.gold:hover{
-  filter:brightness(1.08);
-  box-shadow:0 0 34px rgba(229,196,90,.26),inset 0 1px 0 rgba(255,255,255,.42)!important;
-}
-.hero,.stats .stat{
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 20px 60px rgba(0,0,0,.24);
-}
+/* One-time import from the official BYOU CITY organization screenshots. */
+window.installOfficialRoster=function(){
+  const version='byouOfficialRoster20260706v1';
+  if(localStorage.getItem(version)==='done')return;
+  const gold=['Arpub','Ngeu [Ngeu]','Ghost Gang','Serennity [SRN]','Triples','BANGRAJAN','REALFAITH','Foxevil','POKRAK LADY','POKRAK','Theripper [TRP]','CHILLDEE [CD]','Moonbox','Shirobaki [SBK]','Xers [XERS]'];
+  const silver=['Always [AIB]','Baby Shark','THE THI BAAN','ONE GIRL','HR!','BADNEKO','UNITED ARAB EMIRATES','Yan Whang [YW]','AROMDEE(ARD)','Phavana PVN','Dteam','Limited','PRAEWPROW','KODBAD [KB]','Clutch [C]','OKANE [ONE]'];
+  const families=['Warsup [WS]','Hydra[HD]','TOBBOT','OKANE FAMILY','Shirobaki [SBKF]','KAWAII','SLAGGER','SAFEPLANET (SPN)','Miss you 24 hr (24HR)','Personal [Per]','DaraStar','DEKNOLOVE','Saosee','YOUNGRAK','MANIAC','OBONE [OB1]','Don\'t touch me','PLUSSIZE','Reset','Sevendeadlysins'];
+  const mc=['Predator MC','Wolf Blood [WBMC]','KURONEKO','Sannou','MR BONE MC','GENZAP CLUB','Ratsamee MC','Black Pearl (MC)'];
+  const colors=['#d4b24c','#4f83cc','#b04b52','#8a63c7','#42a6a2','#d17b3f','#b56c9f','#70828e'];
+  const clean=s=>String(s||'').toLowerCase().replace(/\s+/g,'').replace(/[\[\]()]/g,'');
+  const merge=(key,rows)=>{state[key]=Array.isArray(state[key])?state[key]:[];rows.forEach((row,i)=>{let item=typeof row==='string'?{name:row}:row,found=state[key].find(o=>clean(o.name)===clean(item.name));if(found){if(item.tier)found.tier=item.tier;return}state[key].push({id:uid(),name:item.name,leader:'',deputy:'',tier:item.tier,color:colors[i%colors.length],colorName:'',motherColor:false,logo:orgFallback,members:[]})})};
+  state.gangs=(state.gangs||[]).filter(o=>o.name!=='Golden Wolves');
+  state.families=(state.families||[]).filter(o=>o.name!=='Valentine Family');
+  state.mc=(state.mc||[]).filter(o=>o.name!=='Black Reapers MC');
+  merge('gangs',gold.map(name=>({name,tier:'Gold'})));
+  merge('gangs',silver.map(name=>({name,tier:'Silver'})));
+  merge('families',families);
+  merge('mc',mc);
+  localStorage.setItem(version,'done');
+};
+window.installHrRoster=function(){
+  const version='byouHrRoster20260706v1';
+  if(localStorage.getItem(version)==='done')return;
+  state.members=Array.isArray(state.members)?state.members:[];
+  const rows=[
+    ['Danny Heng','หัวหน้า HR'],
+    ['MUMi Lux','รองหัวหน้า HR'],
+    ['Jaoayla Idunnowuttodo','รองหัวหน้า HR'],
+    ['Sympathetic The B Tamana Nervous Emmett','รองหัวหน้า HR'],
+    ['Diary Iris','สมาชิกหลัก HR'],
+    ['Bom ZetaGundam','สมาชิกหลัก HR'],
+    ['PhraPhaeng Lux','สมาชิกหลัก HR'],
+    ['Popia Namjimbuai','สมาชิกหลัก HR'],
+    ['Tenso Sabiki','สมาชิกหลัก HR'],
+    ['Kiewkrob Namjimbuai','สมาชิกหลัก HR'],
+    ['Yoko Merton','สมาชิกหลัก HR'],
+    ['Thomas Cell','สมาชิกหลัก HR'],
+    ['Vivian Luvmeow','สมาชิกหลัก HR'],
+    ['DRAGON The B Emmett Nervous System','สมาชิกหลัก HR'],
+    ['Praew Proud','สมาชิกหลัก HR'],
+    ['Latae TaeHee','สมาชิกหลัก HR'],
+    ['View Chanathip Siriworanantwong','สมาชิกหลัก HR']
+  ];
+  const clean=s=>String(s||'').toLowerCase().replace(/\s+/g,'');
+  rows.forEach(([name,role])=>{
+    let found=state.members.find(m=>clean(m.name)===clean(name));
+    if(found)found.role=role;
+    else state.members.push({id:uid(),name,role,image:fallback});
+  });
+  localStorage.setItem(version,'done');
+};

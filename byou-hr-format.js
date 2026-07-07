@@ -1,6 +1,52 @@
-/* Detailed HR controls */
-.hr-prik-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}.hr-prik-grid article{padding:14px;border:1px solid rgba(216,185,87,.09);border-radius:14px;background:rgba(255,255,255,.012)}.hr-prik-grid article>div{display:flex;align-items:center;gap:9px}.hr-prik-grid span{font:700 16px Montserrat;color:rgba(216,185,87,.3)}.hr-prik-grid b{font-size:11px;font-weight:500}.hr-prik-grid button{margin-left:auto;border:0;background:transparent;color:#c9ab52;font:400 9px Kanit;cursor:pointer}.hr-prik-grid p{min-height:44px;color:#a9a59b;font-size:11px;line-height:1.55;margin:11px 0 0}.hr-potek-teams{display:grid;grid-template-columns:1fr 70px 1fr;align-items:center;gap:15px}.hr-potek-teams section{display:grid;grid-template-columns:1fr 150px;gap:10px;padding:17px;border:1px solid rgba(216,185,87,.09);border-radius:15px}.hr-vs{text-align:center;color:#d6b956;font:700 17px Montserrat}.hr-potek-actions{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:15px 0}.hr-potek-actions button{border:1px solid rgba(216,185,87,.12);border-radius:10px;padding:10px;background:rgba(216,185,87,.045);color:#d2c187;font:400 10px Kanit;cursor:pointer}.hr-potek-actions button:hover{border-color:rgba(216,185,87,.3)}@media(max-width:1180px){.hr-prik-setup{grid-template-columns:1fr 1fr 130px}.hr-preset-grid{grid-template-columns:repeat(2,1fr)}.hr-agreement-grid{grid-template-columns:repeat(2,1fr)}.hr-potek-actions{grid-template-columns:1fr 1fr}}@media(max-width:760px){.hr-preset-grid,.hr-detail-grid,.hr-prik-grid{grid-template-columns:1fr}.hr-story-main,.hr-agreement-grid{grid-template-columns:1fr}.hr-prik-setup{grid-template-columns:1fr}.hr-potek-teams{grid-template-columns:1fr}.hr-potek-teams section{grid-template-columns:1fr}.hr-vs{padding:3px}.hr-potek-actions{grid-template-columns:1fr}.hr-preset-grid button{min-height:90px}}
-.hr-subtitle{margin:25px 0 12px;color:#b79b4d;font:600 9px Montserrat;letter-spacing:2px}.hr-preset-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.hr-preset-grid button{min-height:115px;padding:14px;text-align:left;border:1px solid rgba(216,185,87,.09);border-radius:13px;background:rgba(255,255,255,.015);color:#d7d2c5;cursor:pointer;display:grid;grid-template-columns:32px 1fr;gap:6px 9px;transition:.2s}.hr-preset-grid button:hover{border-color:rgba(216,185,87,.27);background:rgba(216,185,87,.035);transform:translateY(-2px)}.hr-preset-grid i{font:700 16px Montserrat;color:rgba(216,185,87,.32)}.hr-preset-grid span{font:400 11px/1.55 Kanit}.hr-preset-grid b{grid-column:2;color:#bfa453;font-size:9px}.hr-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}.hr-detail-grid>section{padding:18px;border:1px solid rgba(216,185,87,.09);border-radius:16px;background:rgba(255,255,255,.012)}.hr-detail-grid .hr-subtitle{margin-top:0}.hr-quick{display:flex;gap:7px}.hr-quick button{flex:1;border:1px solid rgba(216,185,87,.12);border-radius:9px;padding:8px;background:rgba(216,185,87,.04);color:#c3b47f;font:400 10px Kanit;cursor:pointer}.hr-mini-output{margin-top:10px;padding:12px;border-radius:10px;background:#090a09;color:#aaa59a;font:400 11px/1.55 Kanit;white-space:pre-line;min-height:48px}.hr-story-main{grid-template-columns:repeat(3,1fr);margin-bottom:17px}.hr-agreement{padding:18px;border:1px solid rgba(216,185,87,.08);border-radius:16px;margin-bottom:13px}.hr-agreement.hidden{display:none}.hr-agreement .hr-subtitle{margin-top:0}.hr-agreement-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.hr-story-actions{display:flex;justify-content:flex-end;gap:8px;margin:15px 0}.hr-prik-setup{display:grid;grid-template-columns:150px 1fr 130px 1fr 130px 1fr 130px;gap:10px;align-items:end;margin-bottom:18px}.hr-score{height:44px;display:grid;grid-template-columns:36px 1fr 36px;border:1px solid rgba(216,185,87,.13);border-radius:11px;overflow:hidden}.hr-score button{border:0;background:rgba(216,185,87,.05);color:#d8b957;font-size:17px;cursor:pointer}.hr-score b{display:grid;place-items:center;font:700 17px Montserrat}
-.hr-multi-field{padding:13px!important;border:1px solid rgba(229,196,90,.13);border-radius:13px;background:linear-gradient(120deg,rgba(229,196,90,.05),rgba(10,10,13,.35))}.hr-multi-options{display:flex;flex-wrap:wrap;gap:8px;margin-top:9px}.hr-multi-options>label{cursor:pointer}.hr-multi-options input{position:absolute;opacity:0;pointer-events:none}.hr-multi-options span{display:flex;align-items:center;gap:7px;min-height:35px;padding:7px 11px;border:1px solid rgba(255,255,255,.08);border-radius:9px;background:rgba(255,255,255,.025);color:#8d8980;font-size:11px;transition:.2s ease}.hr-multi-options span>i{display:grid;place-items:center;width:17px;height:17px;border:1px solid rgba(255,255,255,.12);border-radius:5px;color:transparent;font-size:9px;font-style:normal}.hr-multi-options label:hover span{border-color:rgba(229,196,90,.25);color:#c9c0a5}.hr-multi-options input:checked+span{border-color:rgba(229,196,90,.42);background:linear-gradient(120deg,rgba(229,196,90,.14),rgba(229,196,90,.04));color:#f0d573;box-shadow:0 0 16px rgba(229,196,90,.07)}.hr-multi-options input:checked+span>i{border-color:#d9b94f;background:#d9b94f;color:#171309;box-shadow:0 0 10px rgba(229,196,90,.23)}@media(max-width:650px){.hr-multi-options span{min-height:33px;padding:6px 9px;font-size:10px}}
-.hr-native select optgroup{background:#111216;color:#e2c660;font:700 11px Kanit,sans-serif}.hr-native select option{background:#0c0d10;color:#ddd6bd;padding:7px}.hr-native .field:has(select[id^="hrTeam"]),.hr-native .field:has(select[id^="hrPrik"]){position:relative}.hr-native .field:has(select[id^="hrTeam"]):after,.hr-native .field:has(select[id^="hrPrik"]):after{content:"แยกตาม Tier / ประเภท";position:absolute;right:9px;top:1px;color:#6f695b;font-size:7px;letter-spacing:.06em;pointer-events:none}
-.hr-mini-copy{display:flex;justify-content:flex-end;margin-top:9px}.hr-mini-copy .btn{padding:7px 12px;border-radius:9px;color:#d8c478;background:rgba(216,185,87,.045);font-size:10px}.hr-mini-copy .btn:hover{border-color:rgba(216,185,87,.35);color:#fff0a1}
+function hrRaw(id){return document.getElementById(id)?.value||''}
+function hrMultiRaw(id){let values=[...document.querySelectorAll(`#${id} input[type="checkbox"]:checked`)].map(x=>x.value);return values.length?values.join(' / '):'ไม่ระบุ'}
+function hrDiscordType(name){let org=allOrganizations().find(o=>o.name===name);if(!org)return 'GANG';if(org.kind==='แก๊ง')return 'GANG';if(org.kind==='ครอบครัว')return 'Family';if(org.kind==='MC')return 'MC';return 'citizens'}
+function hrThaiDate(value){if(!value)return '';let [y,m,d]=value.split('-').map(Number);return `${d}/${m}/${y+543}`}
+window.generateHrAgreement=function(){let type=hrRaw('hrStoryType'),a=hrRaw('hrTeamA'),b=hrRaw('hrTeamB'),t1=hrDiscordType(a),t2=hrDiscordType(b),date=hrThaiDate(hrRaw('hrStoryDate')),time=hrRaw('hrStoryTime'),place=hrRaw('hrStoryPlace'),text='';if(type==='fight'){text=`# ประกาศสตอรี่ ไฟต์ตรง
+\`\`\`
+ประกาศสตอรี่ไฟต์ตรงจากที่ว่าการ BYOU CITY 
+ระหว่าง ${t1} : ${a} VS ${t2} : ${b}  
+โดยมีข้อตกลงดังนี้
+• เริ่มวันที่ : ${date}
+• เวลา : ${time} น.
+• สถานที่ : ${place}
+• จำนวนไฟต์ : ${hrRaw('hrFightCount')} 
+• ฝั่งไหนถึง : ${hrRaw('hrWinCount')} ก่อนชนะ
+• คูลดาวน์ไฟท์ : ${hrRaw('hrCooldown')}
+• บัฟ : ${hrRaw('hrBuff')}
+• ( หากปลดบัพ คำยกเว้น ) : ${hrRaw('hrBuffException')}
+• จำนวนคน : ${hrRaw('hrPlayerCount')} คน
+• ( เอาคนเข้าออก/เปลี่ยนสล๊อต) : ${hrRaw('hrSwapRule')}
+• รูปแบบการเล่น : ${hrMultiRaw('hrFightRule')}
+• หากมีการแคสจะรอหรือไม่ : ${hrRaw('hrCastWait')}
+• หากรอระหว่างแคส เลือก 5/10 นาที : ${hrRaw('hrWaitMinute')} นาที
+• แคสระหว่างไฟท์ (เล่นต่อ/รอไฟท์ถัดไป) : ${hrRaw('hrCastRule')}
+• สินสงคราม : ${hrRaw('hrWarReward')}
+• ใบ/ใบ หรือ ใบ/เงิน(ปรับ) : ${hrRaw('hrPenalty')}
+• เล่นตามกฎสตอรี่ไฟต์ตรง และตามกฎประเทศทุกกรณี
+• HR ประกาศเริ่มไฟท์แรก
+ขณะมีสตอรี่ หรือหากทางที่ว่าการประกาศสตอรี่แล้ว จะไม่สามารถเข้ากิจกรรมได้รวมถึงวาปเข้าพื้นที่ต่างๆที่เป็นการวาปทุกกรณี [ รวมถึง วอโซน / AFK /แอร์ดรอป/งัดร้าน ] 
+\`\`\`
+<@&1249731558588289053>`}else{text=`# ประกาศสตอรี่อุ้ม
+\`\`\`
+ประกาศสตอรี่อุ้มจากที่ว่าการ BYOU CITY 
+ระหว่าง ${t1} : ${a} VS ${t2} : ${b}
+โดยมีข้อตกลงดังนี้
+• เริ่มวันที่ : ${date}
+• เวลา : ${time}
+• สถานที่ไฟต์แรก : ${place}
+• จำนวนครั้งในการเอ๋อ : ${hrRaw('hrFailCount')} เอ๋อ
+• บัฟ : ${hrRaw('hrKidnapBuff')}
+• ( หากปลดบัพ คำยกเว้น ) : ${hrRaw('hrKidnapException')}
+• จำนวนคน : ${hrRaw('hrKidnapPlayers')} คน
+• ( เอาคนเข้าออก/เปลี่ยนสล๊อต) : ${hrRaw('hrKidnapSwap')}
+• ข้อตกลงในการเล่น : ${hrMultiRaw('hrKidnapRule')}
+• สินสงคราม : ${hrRaw('hrKidnapReward')}
+• ใบ/ใบ หรือ ใบ/เงิน(ปรับ) : ${hrRaw('hrKidnapPenalty')}
+
+• งดเข้าร่วมกิจกรรม แอร์ดรอป / AFK กิจกรรมที่เกี่ยวกับวาปร์ทั้งหมด
+• เล่นตามกฎสตอรี่ไฟต์ และตามกฎประเทศทุกกรณี
+ขณะมีสตอรี่ หรือหากทางที่ว่าการประกาศสตอรี่แล้ว จะไม่สามารถเข้ากิจกรรมได้รวมถึงวาปเข้าพื้นที่ต่างๆที่เป็นการวาปทุกกรณี [ รวมถึง วอโซน / AFK /แอร์ดรอป/งัดร้าน ] 
+\`\`\`
+
+<@&1249731558588289053>`}document.getElementById('hrAgreementOutput').value=text;return text}
